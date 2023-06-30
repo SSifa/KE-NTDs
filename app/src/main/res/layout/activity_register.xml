@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,30 +10,24 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="KE-NTDs"
+        android:text="@string/ke_ntds"
         android:textColor="@color/orchid"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
-        android:id="@+id/txtRegister"
+        android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registration"
+        android:text="@string/registration"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.036" />
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView" />
 
     <EditText
         android:id="@+id/edtRegUsername"
@@ -44,7 +37,7 @@
         android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/username"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
@@ -52,12 +45,10 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRegister"
-        app:layout_constraintVertical_bias="0.055" />
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txtLogin"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/edtRegEmail"
@@ -67,21 +58,18 @@
         android:drawableStart="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email"
-        android:inputType="textPersonName"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegUsername"
-        app:layout_constraintVertical_bias="0.059"
-        tools:ignore="TextFields" />
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtRegUsername"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/edtRegPassword"
@@ -91,7 +79,7 @@
         android:drawableStart="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
@@ -99,12 +87,10 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegEmail"
-        app:layout_constraintVertical_bias="0.067" />
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtRegEmail"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/edtRegConfirmPassword"
@@ -114,7 +100,7 @@
         android:drawableStart="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Confirm Password"
+        android:hint="@string/confirm_password"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
@@ -122,38 +108,31 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegPassword"
-        app:layout_constraintVertical_bias="0.071" />
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtRegPassword"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="76dp"
         android:background="@drawable/btn_bg"
-        android:text="Register"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegConfirmPassword"
-        app:layout_constraintVertical_bias="0.813" />
+        android:text="@string/register"
+        android:layout_marginTop="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtRegConfirmPassword"/>
 
     <TextView
         android:id="@+id/txtRegLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already registered, Login"
+        android:text="@string/already_registered_login"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
-        app:layout_constraintVertical_bias="0.282" />
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/btnRegister"
+        android:layout_centerHorizontal="true"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

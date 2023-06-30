@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">KE-NTDs</string>
+    <string name="ke_ntds">KE-NTDs</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="new_use_register">New use, register</string>
+    <string name="registration">Registration</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_registered_login">Already registered, Login</string>
+    <string name="cases">CASES</string>
+    <string name="report_case">REPORT CASE</string>
+    <string name="disease_mobility">disease mobility</string>
 </resources>
