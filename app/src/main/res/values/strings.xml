@@ -12,5 +12,12 @@
     <string name="already_registered_login">Already registered, Login</string>
     <string name="cases">CASES</string>
     <string name="report_case">REPORT CASE</string>
-    <string name="disease_mobility">disease mobility</string>
+    <string name="disease_mobility">Disease Mobility</string>
+    <string name="ke_ntds_dashboard">KE-NTDs Dashboard</string>
+    <string name="disease_prevalence">Disease Prevalence</string>
+    <string name="disease_diagnosis">Disease Diagnosis</string>
+    <string name="treatment">Treatment</string>
+    <string name="contact_experts">Contact Experts</string>
+    <string name="about_ke_ntds">About KE-NTDs</string>
+    <string name="meet_our_experts">Meet Our Experts</string>
 </resources>

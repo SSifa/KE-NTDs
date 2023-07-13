@@ -11,7 +11,7 @@
         android:id="@+id/txtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="KE-NTDs Dashboard"
+        android:text="@string/ke_ntds_dashboard"
         android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -30,8 +30,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/mobilityCdView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -51,13 +51,13 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/mobility"
-                    android:contentDescription="Disease Mobility" />
+                    android:contentDescription="@string/disease_mobility" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:text="Disease Mobility"
+                    android:text="@string/disease_mobility"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -68,8 +68,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/prevalenceCdView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -89,13 +89,13 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/status"
-                    android:contentDescription="Disease Prevalence" />
+                    android:contentDescription="@string/disease_prevalence" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:text="Disease Prevalence"
+                    android:text="@string/disease_prevalence"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -106,8 +106,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/diagnosisCdView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="10dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -127,12 +127,12 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/diagnosis"
-                    android:contentDescription="Disease Diagnosis" />
+                    android:contentDescription="@string/disease_diagnosis" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Disease Diagnosis"
+                    android:text="@string/disease_diagnosis"
                     android:textAlignment="center"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"
@@ -144,8 +144,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/treatmentCdView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -165,13 +165,13 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/pharmacy"
-                    android:contentDescription="Treatment" />
+                    android:contentDescription="@string/treatment" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:text="Treatment"
+                    android:text="@string/treatment"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
@@ -181,8 +181,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/doctorsCdView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -202,12 +202,12 @@
                     android:layout_height="73dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/stethoscope"
-                    android:contentDescription="Meet Doctors" />
+                    android:contentDescription="@string/contact_experts" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact Doctors"
+                    android:text="@string/contact_experts"
                     android:textAlignment="center"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"
@@ -219,8 +219,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/aboutCdView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -233,19 +233,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/info2"
-                    android:contentDescription="About KE-NTDs" />
+                    android:contentDescription="@string/about_ke_ntds" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="About KE-NTDs"
+                    android:text="@string/about_ke_ntds"
                     android:textAlignment="center"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"

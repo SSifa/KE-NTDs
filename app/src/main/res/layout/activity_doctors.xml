@@ -7,34 +7,20 @@
     android:orientation="vertical"
     android:background="@drawable/back2"
     tools:context=".Doctors">
-    <LinearLayout
+    <TextView
+        android:id="@+id/txtView"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:background="@color/white">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:text="PROFESSIONALS"/>
-        <TextView
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:background="#737272"
-            android:gravity="center"
-            android:text=""/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:text="REGISTER"/>
-    </LinearLayout>
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/meet_our_experts"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

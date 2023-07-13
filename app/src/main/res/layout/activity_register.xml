@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
@@ -14,8 +15,8 @@
         android:textColor="@color/orchid"
         android:textSize="34sp"
         android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
 
     <TextView
         android:id="@+id/txtLogin"
@@ -119,7 +120,7 @@
         android:layout_height="50dp"
         android:background="@drawable/btn_bg"
         android:text="@string/register"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="48dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/edtRegConfirmPassword"/>
 
