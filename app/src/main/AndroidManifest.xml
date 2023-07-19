@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ke_ntds">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/stethoscope"
@@ -9,6 +15,24 @@
         android:roundIcon="@mipmap/stethoscope"
         android:supportsRtl="true"
         android:theme="@style/Theme.KENTDs">
+        <activity
+            android:name=".TungiasisTreatmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SchistosomiasisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FilariasisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GlaucomaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TungiasisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiagnosisActivity"
+            android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
@@ -23,9 +47,6 @@
             android:exported="false" />
         <activity
             android:name=".Treatment"
-            android:exported="false" />
-        <activity
-            android:name=".DiseaseDiagnosis"
             android:exported="false" />
         <activity
             android:name=".DiseasePrevalence"

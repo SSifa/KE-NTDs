@@ -23,4 +23,9 @@
     <string name="location">Location</string>
     <string name="case_type">Case type</string>
     <string name="select_mobility">Mobility status</string>
+    <string name="capture_case">Capture Image</string>
+    <string name="tungiasis">Tungiasis</string>
+    <string name="lymphatic_filariasis">Lymphatic Filariasis</string>
+    <string name="glaucoma">Glaucoma</string>
+    <string name="schistosomiasis">Schistosomiasis</string>
 </resources>

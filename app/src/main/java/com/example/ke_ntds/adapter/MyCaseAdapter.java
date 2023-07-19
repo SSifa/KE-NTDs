@@ -1,6 +1,7 @@
 package com.example.ke_ntds.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,9 @@ public class MyCaseAdapter extends RecyclerView.Adapter<MyCaseAdapter.MyCaseHold
     public void onBindViewHolder(@NonNull MyCaseHolder holder, int position) {
         holder.imgView.setImageResource(cases.get(position).getImg());
         holder.caseType.setText(cases.get(position).getCaseType());
+        if (cases.get(position).getMobility().toString().equals("Severe")){
+            holder.mobility.setTextColor(Color.RED);
+        }
         holder.mobility.setText(cases.get(position).getMobility());
         holder.location.setText(cases.get(position).getLocation());
     }

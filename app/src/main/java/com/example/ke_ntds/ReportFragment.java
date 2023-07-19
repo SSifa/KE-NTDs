@@ -1,23 +1,36 @@
 package com.example.ke_ntds;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.preference.PreferenceManager;
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.util.Objects;
+
 public class ReportFragment extends Fragment {
 
+    Button btnReport;
     AutoCompleteTextView autoCompleteTextView, autoCompleteTextView1;
     String[] mobilityState = {"Severe", "Moderate", "Mild"};
-    String[] caseTypes = {"Tungiasis", "Lymphatic filariasis", "Glaucoma", "Schistomiasis"};
+    String[] caseTypes = {"Diagnosis", "Lymphatic filariasis", "Glaucoma", "Schistomiasis"};
     ArrayAdapter<String> arrayAdapter1;
     ArrayAdapter<String> arrayAdapter;
     String selectedCaseType, selectedMobility;
@@ -27,8 +40,9 @@ public class ReportFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = LayoutInflater.from(getContext())
-                .inflate(R.layout.fragment_report, container, false);
+        View view = inflater.inflate(R.layout.fragment_report, container, false);
+
+        btnReport = view.findViewById(R.id.btn_report_case);
 
         autoCompleteTextView = view.findViewById(R.id.auto_complete_text);
         arrayAdapter = new ArrayAdapter<String>(this.getContext(), R.layout.case_types, mobilityState);
@@ -53,7 +67,14 @@ public class ReportFragment extends Fragment {
             }
         });
 
+        btnReport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "Button clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_report, container, false);
+        return view;
     }
 }

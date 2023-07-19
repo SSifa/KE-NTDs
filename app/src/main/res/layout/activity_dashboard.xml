@@ -16,20 +16,20 @@
         android:textSize="36sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="16dp"/>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:rowCount="3"
         android:columnCount="2"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="25dp"
         android:layout_below="@+id/txtView">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/mobilityCdView"
+            android:id="@+id/tungiasisCdView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
@@ -67,7 +67,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/prevalenceCdView"
+            android:id="@+id/glaucomaCdView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
@@ -105,7 +105,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/diagnosisCdView"
+            android:id="@+id/filariasisCdView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardCornerRadius="10dp"
@@ -143,7 +143,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/treatmentCdView"
+            android:id="@+id/schistosomiasisCdView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"

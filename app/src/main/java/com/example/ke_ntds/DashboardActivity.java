@@ -23,10 +23,10 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        mobilityCdView = findViewById(R.id.mobilityCdView);
-        prevalenceCdView = findViewById(R.id.prevalenceCdView);
-        diagnosisCdView = findViewById(R.id.diagnosisCdView);
-        treatmentCdView = findViewById(R.id.treatmentCdView);
+        mobilityCdView = findViewById(R.id.tungiasisCdView);
+        prevalenceCdView = findViewById(R.id.glaucomaCdView);
+        diagnosisCdView = findViewById(R.id.filariasisCdView);
+        treatmentCdView = findViewById(R.id.schistosomiasisCdView);
         doctorsCdView = findViewById(R.id.doctorsCdView);
         aboutCdView = findViewById(R.id.aboutCdView);
 
@@ -49,7 +49,7 @@ public class DashboardActivity extends AppCompatActivity {
         diagnosisCdView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), DiseaseDiagnosis.class);
+                Intent intent = new Intent(getApplicationContext(), DiagnosisActivity.class);
                 startActivity(intent);
             }
         });
