@@ -16,6 +16,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KENTDs">
         <activity
+            android:name=".SchistosomiasisTreatmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FilariasisTreatmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GlaucomaTreatmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".TungiasisTreatmentActivity"
             android:exported="false" />
         <activity

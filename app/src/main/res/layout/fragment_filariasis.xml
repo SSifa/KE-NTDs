@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilariasisFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diagnosis"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filariasis_diag"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="@string/symptoms"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filariasis_symptoms"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</ScrollView>

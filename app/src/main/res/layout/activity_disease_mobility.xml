@@ -24,6 +24,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/report_case" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/glaucoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glaucoma" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tungiasis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tungiasis" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager

@@ -28,4 +28,69 @@
     <string name="lymphatic_filariasis">Lymphatic Filariasis</string>
     <string name="glaucoma">Glaucoma</string>
     <string name="schistosomiasis">Schistosomiasis</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="filariasis_diag">
+        Macroscopic examination
+    </string>
+    <string name="filariasis_symptoms">
+        1. Itchy skin\n
+        2. Abdominal pain\n
+        3. Chest pain\n
+        4. Musch pain\n
+        5. Swelling under skin
+    </string>
+
+    <string name="tungiasis_diag">
+        Extraction of gravid tanga penetrans flea using sterile needle\n
+        Skin biopsy of suspected nodule\n
+        Histologio examination of tissue
+    </string>
+    <string name="tungiasis_symptoms">
+        1. Painful lessions\n
+        2. Painful \n
+        3. Itching and irritation\n
+        4. Caflammation and \n
+        5. Bacterial/Secondary infection
+    </string>
+
+    <string name="glaucoma_diag">
+        Complete eye exam\n
+        Ophthalmologist will:\n
+        <li>Measure eye pressure\n</li>
+        <li>Inspect eye\'s drainage angle\n</li>
+        <li>Examine optic nerve for damage\n</li>
+        <li>Test peripheral eye vision\n</li>
+        <li>Take picture of optic nerve\n</li>
+        <li>Measure thickness of the cornea</li>
+    </string>
+    <string name="glaucoma_symptoms">
+        1. Cloudiness of the eyes\n
+        2. Enlargement of one eye or both\n
+        3. Red eye\n
+        4. Sensitivity to light\n
+        5. Tearing\n
+        6. Nausea and vomiting\n
+        7. Sudden severe pain in one eye\n
+        8. Blurred vision
+    </string>
+
+    <string name="schistosomiasis_diag">
+        Macroscopic examination of
+        stool or urine samples for parasite eggs\n
+        Serologic tost
+    </string>
+    <string name="schistosomiasis_symptoms">
+        1. Rushes\n
+        2. Itchy skin\n
+        3. Fever\n
+        4. Joint\n
+        5. Musch aches\n
+        6. Chills\n
+        7. Cough\n
+        8. Headache\n
+        9. Stomach pain
+    </string>
+
+    <string name="filariasis_diagnosis">Macroscopic examination</string>
+    <string name="symptoms">Symptoms</string>
 </resources>

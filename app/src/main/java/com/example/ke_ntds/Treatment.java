@@ -24,28 +24,28 @@ public class Treatment extends AppCompatActivity {
         tungiasisCV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), TungiasisActivity.class));
+                startActivity(new Intent(getApplicationContext(), TungiasisTreatmentActivity.class));
             }
         });
 
         glaucomaCV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), GlaucomaActivity.class));
+                startActivity(new Intent(getApplicationContext(), GlaucomaTreatmentActivity.class));
             }
         });
 
         filariasisCV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), FilariasisActivity.class));
+                startActivity(new Intent(getApplicationContext(), FilariasisTreatmentActivity.class));
             }
         });
 
         schistosomiasisCV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), SchistosomiasisActivity.class));
+                startActivity(new Intent(getApplicationContext(), SchistosomiasisTreatmentActivity.class));
             }
         });
     }

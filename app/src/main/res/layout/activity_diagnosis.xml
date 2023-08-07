@@ -1,174 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
     android:orientation="vertical"
-    tools:context=".DiagnosisActivity">
+    android:background="@drawable/back2"
+    tools:context=".DiseaseMobility">
 
-    <ImageView
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:src="@drawable/medical" />
+        android:layout_height="wrap_content">
 
-    <GridLayout
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lymphatic_filariasis" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabReportCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/schistosomiasis" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/glaucoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/glaucoma" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tungiasis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tungiasis" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="-50dp"
-        android:layout_marginEnd="25dp"
-        android:layout_weight="4"
-        android:columnCount="2"
-        android:rowCount="3">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/tungiasisCdView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/tungiasis"
-                    android:src="@drawable/tungiasis" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/tungiasis"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/glaucomaCdView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight="1"
-            android:layout_column="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/glaucoma"
-                    android:src="@drawable/glaucoma" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/glaucoma"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/filariasisCdView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_rowWeight="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/lymphatic_filariasis"
-                    android:src="@drawable/filariasis" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/lymphatic_filariasis"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/schistosomiasisCdView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_rowWeight="1"
-            android:layout_column="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/schistosomiasis"
-                    android:src="@drawable/schistosomiasis" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/schistosomiasis"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </GridLayout>
+        android:layout_height="wrap_content"/>
 </LinearLayout>
