@@ -2,51 +2,36 @@ package com.example.ke_ntds;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class Treatment extends AppCompatActivity {
 
-    CardView tungiasisCV, glaucomaCV, filariasisCV, schistosomiasisCV;
+    TabLayout tabLayout;
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treatment);
 
-        tungiasisCV = findViewById(R.id.tungiasisCdView);
-        glaucomaCV = findViewById(R.id.glaucomaCdView);
-        filariasisCV = findViewById(R.id.filariasisCdView);
-        schistosomiasisCV = findViewById(R.id.schistosomiasisCdView);
+        tabLayout = findViewById(R.id.tabLayout);
+        viewPager = findViewById(R.id.viewPager);
 
-        tungiasisCV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), TungiasisTreatmentActivity.class));
-            }
-        });
+        tabLayout.setupWithViewPager(viewPager);
 
-        glaucomaCV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), GlaucomaTreatmentActivity.class));
-            }
-        });
-
-        filariasisCV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), FilariasisTreatmentActivity.class));
-            }
-        });
-
-        schistosomiasisCV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), SchistosomiasisTreatmentActivity.class));
-            }
-        });
+        VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(),
+                FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        vpAdapter.addFragment(new GlaucomaTreatmentFragment(), "GLAUCOMA");
+        vpAdapter.addFragment(new TungiasisTreatmentFragment(), "TUNGIASIS");
+        vpAdapter.addFragment(new SchistosomiasisTreatmentFragment(), "SCHISTOSOMIASIS");
+        vpAdapter.addFragment(new FilariasisTreatmentFragment(), "LYMPHATIC FILARIASIS");
+        viewPager.setAdapter(vpAdapter);
     }
 }

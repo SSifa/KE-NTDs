@@ -16,6 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KENTDs">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
             android:name=".SchistosomiasisTreatmentActivity"
             android:exported="false" />
         <activity

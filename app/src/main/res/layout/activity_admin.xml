@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back2"
-    tools:context=".DashboardActivity">
+    tools:context=".AdminActivity">
 
     <TextView
         android:id="@+id/txtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ke_ntds_dashboard"
+        android:text="@string/admin_dashboard"
         android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -218,7 +218,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/aboutCdView"
+            android:id="@+id/settingsCView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
@@ -240,13 +240,13 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/info2"
-                    android:contentDescription="@string/about_ke_ntds" />
+                    android:src="@drawable/baseline_settings_24"
+                    android:contentDescription="@string/settings" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/about_ke_ntds"
+                    android:text="@string/settings"
                     android:textAlignment="center"
                     android:layout_gravity="center_horizontal"
                     android:textSize="18sp"

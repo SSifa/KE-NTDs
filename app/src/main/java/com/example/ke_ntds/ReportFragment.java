@@ -30,7 +30,7 @@ public class ReportFragment extends Fragment {
     Button btnReport;
     AutoCompleteTextView autoCompleteTextView, autoCompleteTextView1;
     String[] mobilityState = {"Severe", "Moderate", "Mild"};
-    String[] caseTypes = {"Diagnosis", "Lymphatic filariasis", "Glaucoma", "Schistomiasis"};
+    String[] caseTypes = {"Tungiasis", "Lymphatic filariasis", "Glaucoma", "Schistomiasis"};
     ArrayAdapter<String> arrayAdapter1;
     ArrayAdapter<String> arrayAdapter;
     String selectedCaseType, selectedMobility;

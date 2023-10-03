@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">KE-NTDs</string>
     <string name="ke_ntds">KE-NTDs</string>
-    <string name="login">Login</string>
+    <string name="login">User Login</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="new_use_register">New use, register</string>
@@ -39,6 +39,10 @@
         4. Musch pain\n
         5. Swelling under skin
     </string>
+    <string name="filariasis_treatment">
+        <li>Antibiotics - Doxycydine (Doxy100, vibromicine, Doryx, Monodox, Alodox)</li>\n
+        <li>Diethy/Carbamazine Citrate (DEC)</li>
+    </string>
 
     <string name="tungiasis_diag">
         Extraction of gravid tanga penetrans flea using sterile needle\n
@@ -51,6 +55,12 @@
         3. Itching and irritation\n
         4. Caflammation and \n
         5. Bacterial/Secondary infection
+    </string>
+    <string name="tungiasis_treatment">
+        <li>Physical removal of the flea forceps or needles</li>\n
+        <li>Application of topic/anti-parasitic e.g Ivermectin, Metrifonate and thiabondazole</li>\n
+        <li>Suffocation of the flea by applying a thick wax or jelly</li>\n
+        <li>Locally freezing the lesion</li>
     </string>
 
     <string name="glaucoma_diag">
@@ -73,6 +83,10 @@
         7. Sudden severe pain in one eye\n
         8. Blurred vision
     </string>
+    <string name="glaucoma_treatment">
+        <li>Eye drops (Prostaglandin)</li>\n
+        <li>Laser surgery to drain the fluid out of the eye</li>
+    </string>
 
     <string name="schistosomiasis_diag">
         Macroscopic examination of
@@ -90,7 +104,17 @@
         8. Headache\n
         9. Stomach pain
     </string>
+    <string name="schistosomiasis_treatment">
+        <li>Drug: Praquantel for 1-2 days</li>
+    </string>
 
     <string name="filariasis_diagnosis">Macroscopic examination</string>
     <string name="symptoms">Symptoms</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_login">Login</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="update_profile">Update Profile</string>
 </resources>
